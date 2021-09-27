@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.MainPage">
+
+    <StackLayout>
+
+        <Frame BackgroundColor="#6E33FF" Padding="8">
+            <Label Text="UTEQ" HorizontalTextAlignment="Center" TextColor="WhiteSmoke" FontSize="36"/>
+        </Frame>
+        <Image Source="https://imagenes.milenio.com/7rLsGj1tHeLJWPE-XEgS_ItoTL8=/958x596/https://www.milenio.com/uploads/media/2021/03/22/la-vida-de-homero-simpson.jpg" />
+
+        <Label Text="{Binding ContConvertido}" FontSize="30" HorizontalOptions="Center" HeightRequest="50" TextColor="Black"></Label>
+
+        <Grid ColumnDefinitions="*,*" >
+            <Button Text="Inicia contador" Command="{Binding BotonClic}" BorderWidth="2" CornerRadius="15" FontSize="15" HorizontalOptions="Center" Padding="10" BackgroundColor="GreenYellow" TextColor="Black"></Button>
+            <Button Grid.Column="1" Text="Reiniciar contador" Command="{Binding BotonRestaurar}" BorderWidth="2" CornerRadius="15" FontSize="15" HorizontalOptions="Center" Padding="10" BackgroundColor="Red" TextColor="White"></Button>
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>
